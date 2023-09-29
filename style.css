@@ -5,3 +5,14 @@ h1 {text-align: center; color: rgb(158, 81, 26); background-color: black; text-s
 h2 {text-align: center; color: chocolate; background-color: black;}
 nav { color: white; background-color: black; text-align: center;}
 p {color: white; text-align: center;}
+
+label {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+#formulario {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
