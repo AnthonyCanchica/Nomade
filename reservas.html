@@ -25,57 +25,69 @@
         <hr>
     </nav>
     <main>
+    <div class="tabla-reservas"> 
         <table>
-            <tr>
-                <td>        
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.263507090625!2d-58.428881825005966!3d-34.57219845583303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb585ebbf48ed%3A0x73350aa5aaadc57f!2sNomade%20-%20F%26D!5e0!3m2!1ses!2sar!4v1694689456606!5m2!1ses!2sar"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </td>
-                <td> 
-                <div id="formulario">
+            <tr>                
+               <td> 
+                <div id="formulario"
+                width="90%" height="80%" >
                 <form action="">
-                    <label for="nom">Nombre</label>
-                    <input type="text" name="nombre" id="nom">
+                    <h4>Reservas</h4>
+                    <p>Horario de Apertura <br> Mirecoles a Sabado </p>
+                    <h2>19 Hrs</h2>
+                    <label class="etiqueta" for="nom">Nombre</label>
+                    <input class="campo" type="text" name="nombre" id="nom">
                     <br>
-                    <label for="ape">Apellido</label>
-                    <input type="text" name="apellido" id="ape">
+                    <label class="etiqueta" for="ape">Apellido</label>
+                    <input class="campo" type="text" name="apellido" id="ape">
                     <br>
-                    <label for="mail">Correo</label>
-                    <input type="email" name="Correo" id="mail">
+                    <label class="etiqueta" for="mail">Correo</label>
+                    <input class="campo" type="email" name="Correo" id="mail">
                     <br>
-                    <label for="cant">Cantidad de comensales</label>
-                    <input type="number" name="Comensales" id="cant" min="1" max="12">
+                    <label class="etiqueta" for="cant">Cantidad de comensales</label>
+                    <input class="campo" type="number" name="Comensales" id="cant" min="1" max="12">
                     <br>
-                    <label for="fecha">Fecha</label>
-                    <input type="date" name="fecha" id="fecha">
+                    <label class="etiqueta" for="fecha">Fecha</label>
+                    <input class="campo" type="date" name="fecha" id="fecha">
                     <br>
-                    <label for="hoario">Horario</label><br>
+                    <label class="etiqueta" for="hoario">Horario</label><br>
+                    <table>
+                        <tr>
+                            <td>
                     <input type="radio" name="horario" id="radio1" value="12">
                     <label for="radio1">12:00 hs.</label> <br>
                     <input type="radio" name="horario" id="radio2" value="13">
                     <label for="radio2">13:00 hs.</label> <br>
                     <input type="radio" name="horario" id="radio3" value="14">
                     <label for="radio3">14:00 hs.</label> <br>
-                    <br>
+                            </td>
+                            <td>
+                    
                     <input type="radio" name="horario" id="radio4" value="20">
                     <label for="radio4">20:00 hs.</label> <br>
                     <input type="radio" name="horario" id="radio5" value="21">
                     <label for="radio5">21:00 hs.</label> <br>
                     <input type="radio" name="horario" id="radio6" value="22">
                     <label for="radio6">22:00 hs.</label> <br>
+                            </td>
+                        </tr>
+                    </table>
                     <br>
-                    <input type="submit" value="Reservar">
+                    <input class="boton" type="submit" value="Reservar">
                 </form>
-                </div>
-                <td> 
-                    <h2>Reservas</h2>
-                    <p>Horario de Apertura <br> Mirecoles a Sabado </p>
-                    <h2>19 Hrs</h2>
-                </td>
+                </div>                
+            </td>
+
+            <td >        
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.263507090625!2d-58.428881825005966!3d-34.57219845583303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb585ebbf48ed%3A0x73350aa5aaadc57f!2sNomade%20-%20F%26D!5e0!3m2!1ses!2sar!4v1694689456606!5m2!1ses!2sar"
+                width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </tr>
         </table>
+    </div>
+       
+    </main>
        
     </main>
     <footer>
