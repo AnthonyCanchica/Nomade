@@ -1,0 +1,313 @@
+/*
+
+	-------------------	
+	Guia de Css Global
+	-------------------
+
+	CSS STRUCTURE
+	-----------------
+	01. HTML
+	02. Header
+    03. Nav
+	08. Footer
+	09. Responsive
+	
+*/
+
+/* 01 HTML
+--------------------------------------------------------------- */
+
+h1 {text-align: center; color: hwb(25 10% 38%);  text-size-adjust: 35;}
+h2 {text-align: center; color: #d2691e; }
+nav { color: white; background-color: black; text-align: center;}
+p {color: white; text-align: center;}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1REM = 10px */
+    background-color: #000000;
+}
+
+html {
+    box-sizing: content-box;
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Utilidades */
+.text-center {
+    text-align: center;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+@media (min-width: 768px) { 
+    .max-width-30 {
+        max-width: 30rem;
+    }
+}
+/* 01.Header
+--------------------------------------------------------------- */
+
+#contenedor-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../imagenesDos/website/headerhero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 55rem;
+        
+}
+#contenedor-header h1{
+    text-align: center; 
+    color: #424040e8;  
+    font-size: 9rem;
+    text-shadow: #d2691e 2px 2px 2px;
+
+}
+#contenedor-header h1:hover{
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    color: #d2691e;
+    text-shadow: #424040e8 8px 8px 3px;
+}
+
+#contenedor-header h2{
+    transition-duration: 1s;
+    text-align: center; 
+    color: #d2691e #615f5fd5;  
+    font-size: 8rem;
+    text-shadow: #615f5fd5 4px 4px 2px;
+
+}
+#contenedor-header h2:hover{
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    text-align: center; 
+    color: #d2691e;
+    text-shadow: #424040e8 8px 8px 8px;
+    
+}
+
+
+@media (max-width: 500px) { 
+    #contenedor-header h1 {
+        font-size: 7rem;
+        margin: 0rem;
+    }
+    #contenedor-header h2 {
+        font-size: 5rem;
+        margin: 0rem;
+    }
+    #contenedor-header{
+        height: 25rem;
+    }
+}
+/* 02.Nav
+--------------------------------------------------------------- */
+#contenedor-nav {
+    background-color: #e47c05;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000;
+    
+}
+.nav-principal {
+    background-color: #e47c05;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 1.4rem;
+}
+
+#contenedor-nav a {
+    text-decoration: none;
+    color: #000000;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+
+#contenedor-nav a:hover {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    flex-grow: 0.01;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: #020202 2px 2px 2px;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    border-radius: 10%;
+}
+
+@media (max-width: 500px) { 
+    .nav-principal {
+        flex-direction: column;
+        align-items: center;
+        height: 18rem;
+        padding: 3rem;
+    }
+    #contenedor-nav a{
+        font-size: 2rem;
+        padding: 0.2rem;
+        border: none;
+    }
+    #contenedor-nav a:hover {
+        border: none; 
+        border-top: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+    }
+}
+
+/* 07.Footer
+--------------------------------------------------------------- */
+
+#contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+#horarios a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #d2691e;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1rem; 
+}
+#horarios a:hover {
+    display: block;
+    text-align: center;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    flex-grow: 0.01;
+    font-weight: bold;
+    color: #f30000;
+    text-shadow: #020202 2px 2px 2px;
+    font-size: 2rem;
+}
+
+.contenedor-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para los elementos dentro de .contenedor-info */
+.contenedor-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 5rem;
+    margin-bottom: 20px;
+}
+
+
+#direccion-logo, #telefono-logo, #email-logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la direccion */
+#direccion a {
+    text-decoration: none;
+    color: #d2691e;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+#direccion a:hover {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    flex-grow: 0.01;
+    font-weight: bold;
+    color: #f30000;
+    text-shadow: #020202 2px 2px 2px;
+    font-size: 2rem;
+}
+
+
+/* Estilos para los números de teléfono */
+.contenedor-info p {
+    margin: 0;
+    color: #fff;
+}
+#email a{
+    text-decoration: none;
+    color: #d2691e;
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1rem; 
+}
+#email a:hover {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    flex-grow: 0.01;
+    font-weight: bold;
+    color: #f30000;
+    text-shadow: #020202 2px 2px 2px;
+    border-radius: 10%;
+    font-size: 2rem;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+@media (max-width: 500px) { 
+    .contenedor-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 0rem;
+    }
+    #contenedor-footer {
+        padding-top: 3rem;
+    }
+    
+    .contenedor-info div {
+        padding: 0rem; 
+    }
+
+    .social {
+        margin-top: 20px; 
+    }
+    #contenedor-footer a:hover {
+        color: #f30000;
+        text-shadow: #020202 2px 2px 2px;
+        font-size: 2rem;
+        border: none;
+    }
+}
+
+
+
+

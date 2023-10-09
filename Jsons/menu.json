@@ -1,0 +1,81 @@
+[
+  {
+    "foot": "Grilled Chicken",
+    "type": "Chicken",
+    "price": 10.99,
+    "id": 1,
+    "event": false,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "foot": "Grilled Salmon",
+    "type": "Fish",
+    "price": 14.99,
+    "id": 2,
+    "event": true
+  },
+  {
+    "food": "Grilled Vegetables",
+    "type": "Vegetarian",
+    "price": 8.99,
+    "id": 3,
+    "event": false,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Steak",
+    "type": "Beef",
+    "price": 16.99,
+    "id": 4,
+    "event": true,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Shrimp",
+    "type": "Seafood",
+    "price": 12.99,
+    "id": 5,
+    "event": false,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Pork Chops",
+    "type": "Pork",
+    "price": 13.99,
+    "id": 6,
+    "event": false,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Corn on the Cob",
+    "type": "Vegetarian",
+    "price": 4.99,
+    "id": 7,
+    "event": false,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Pineapple",
+    "type": "Fruit",
+    "price": 3.99,
+    "id": 8,
+    "event": true,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Portobello Mushroom",
+    "type": "Vegetarian",
+    "price": 7.99,
+    "id": 9,
+    "event": false,
+    "image": "../imagenes/food/Avocado.jpg"
+  },
+  {
+    "food": "Grilled Ribs",
+    "type": "Pork",
+    "price": 15.99,
+    "id": 10,
+    "event": true,
+    "image": "../imagenes/food/Avocado.jpg"
+  }
+]
