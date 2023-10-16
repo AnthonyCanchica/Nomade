@@ -1,0 +1,90 @@
+@import url(../Css/global.css);
+
+h1 {text-align: center; color: rgb(158, 81, 26); background-color: black; text-size-adjust: 35;}
+h2 {text-align: center; color: chocolate; background-color: black;}
+h4 {text-align: left;color: aliceblue; font-family: 'sans serif'; font-size: 190%; text-align:center;}
+nav { color: white; background-color: black; text-align: center;}
+p {color: white; text-align: center;}
+
+th{
+    height: 70%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    max-height: 72vh;
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block; 
+    }
+
+    td {
+        display: block; 
+    }
+}
+
+
+
+#formulario h4 {
+    margin-top: 0.01em;
+    margin-bottom: 0.02em;
+}
+
+#formulario {
+    margin: 0 auto;
+    padding: 6%;
+    line-height: 130%;
+    max-height: 80vh;
+    border-radius: 4px;
+    background-color: rgb(2, 35, 33); 
+    min-width: 300px;   
+}
+
+label {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.etiqueta {
+    font-family:sans-serif;
+    line-height: 80%;
+    margin-right: 20%;
+    
+}
+
+.campo{
+    outline: none;
+    width: 90%;
+    padding: 6px;
+    margin-top: 7px;
+    flex-grow: 1;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.campo:focus{
+    border-color: aliceblue;
+}
+
+.boton{
+    width: 95%;
+    font-size: medium;
+    color: antiquewhite;
+    background-color: chocolate;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    
+}
+#mapa{
+   margin: 2em;
+   height: 80hv;
+   height: 80vh;
+}
