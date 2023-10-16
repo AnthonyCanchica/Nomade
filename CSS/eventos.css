@@ -1,1 +1,136 @@
 @import url(../Css/global.css);
+
+/** Listado de eventos **/
+
+.contenido-principal {
+    padding-top: 5rem;
+}
+
+.listado-eventos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4rem;
+    margin: 15rem;
+}
+.evento:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+.evento:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    object-fit:fill;
+}
+.evento:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.evento:nth-child(2) img,
+.evento:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    object-fit: fill;
+}
+.evento:nth-child(3) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.evento:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.evento:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.evento:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.evento:nth-child(4) img,
+.evento:nth-child(5) img,
+.evento:nth-child(6) img {
+    height: 28rem;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.evento {
+    background-color: #e47c05;
+    margin-bottom: 0rem;
+}
+
+.evento:last-of-type {
+    margin-bottom: 0;
+}
+
+.texto-evento {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+.texto-evento h3 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+.texto-evento p {
+    margin: 0 0 .5rem 0;
+    font-size: 1.8rem;
+    text-align: justify;
+}
+.texto-evento .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+} 
+
+.evento:last-of-type {
+    margin-bottom: 0;
+}
+
+.texto-evento {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+.texto-evento h3 {
+    margin: 0;
+}
+.texto-evento p {
+    margin: 0 0 .5rem 0;
+}
+.texto-evento .precio {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.evento:hover {
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.9); 
+}
+
+@media (max-width: 500px) {
+    .listado-eventos {
+        display: block;
+        margin: 4rem;
+    }
+
+    .evento {
+        margin-bottom: 2rem;
+        display: block;
+    }
+
+    .evento img {
+        width: 100%;
+    }
+
+    .evento:nth-child {
+        grid-column: auto;
+        display: block;
+    }
+    .evento:nth-child(1) {
+        display: block;
+    }
+}

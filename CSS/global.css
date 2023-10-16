@@ -9,6 +9,7 @@
 	01. HTML
 	02. Header
     03. Nav
+    04. main
 	08. Footer
 	09. Responsive
 	
@@ -46,6 +47,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
+    margin:0rem;
 }
 
 @media (min-width: 768px) { 
@@ -129,6 +131,8 @@ body {
     align-items: center;
     justify-content: space-around;
     height: 1.4rem;
+    border-top: 2px solid #666666;
+    border-bottom: 2px solid #666666;
 }
 
 #contenedor-nav a {
@@ -137,7 +141,6 @@ body {
     justify-content: space-between;
     font-size: 2rem;
     padding: 1rem;
-    
 }
 
 #contenedor-nav a:hover {
@@ -171,6 +174,13 @@ body {
     }
 }
 
+/* 01.Main
+--------------------------------------------------------------- */
+
+.contenido-principal {
+    padding-top: 5rem;
+}
+
 /* 07.Footer
 --------------------------------------------------------------- */
 
@@ -183,6 +193,7 @@ body {
     color: #fff;
     padding: 2rem;
     margin-top: 3rem;
+    margin-bottom: 0rem;
 }
 
 #horarios a{
@@ -194,6 +205,7 @@ body {
     font-size: 1.8rem;
     padding: 1rem; 
 }
+
 #horarios a:hover {
     display: block;
     text-align: center;
@@ -204,6 +216,14 @@ body {
     color: #f30000;
     text-shadow: #020202 2px 2px 2px;
     font-size: 2rem;
+}
+
+#horarios h3 {
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center; 
 }
 
 .contenedor-info {
@@ -224,8 +244,8 @@ body {
 }
 
 
-#direccion-logo, #telefono-logo, #email-logo {
-    font-size: 24px;
+.logoutm {
+    height: 4rem;
     margin-bottom: 10px;
 }
 
@@ -307,6 +327,8 @@ body {
         border: none;
     }
 }
+
+
 
 
 

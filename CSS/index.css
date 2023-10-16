@@ -1,16 +1,95 @@
 @import url(../Css/global.css);
 
-.video-container {
+
+
+/** Nosotros **/
+
+.contenido-nosotros p{
+    color: #ffffff; /* Color de texto normal */
+    font-size: 2rem;
+    text-align: left;
+}
+
+.contenido-nosotros h3{
+    color: #d2691e; /* Color de texto normal */
+    text-align:left;
+    font-size: 3rem;
+}
+
+.contenido-nosotros {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-in;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
+    column-gap: 4rem;
+    max-width: 90rem; 
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.informacion-nosotros {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 55rem;
-    margin-top: 3.6rem;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 2rem;
+}
+
+.video-nosotros{
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+.contenido-nosotros:hover {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    background-color: #e47c05;
+    text-shadow: #454646 2px 2px 2px;
+    border-radius: 5%;
+}
+
+.contenido-nosotros:hover p{
+    color: #000000;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.contenido-nosotros:hover h3{
+    color: #d2691e;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: #020202 2px 2px 2px;
+    text-align:left;
+    font-size: 3rem;
 }
 
 @media (max-width: 500px) { 
-    .video-container {
-        height: 25rem;
-        margin: 18rem;
+    .informacion-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) { 
+    .video-nosotros{
+    width: 70%;
+    margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) { 
+    .contenido-nosotros {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
+    column-gap: 4rem;
+    max-width: 50rem; 
+    margin: 0 auto;
+    padding: 1rem;
     }
 }
