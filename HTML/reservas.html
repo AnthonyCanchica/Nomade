@@ -18,48 +18,39 @@
                <td> 
                 <div id="formulario"
                 width="90%" height="80%" >
-                <form action="">
+                <form name = "formulario" onsubmit="return validaform()" action="">
                     <h4>Reservas</h4>
                     <p> - Horario de Apertura - <br> - Mirecoles a Sabado - <br> - 19 hs. - </p>
                     <label class="etiqueta" for="nom">Nombre</label>
-                    <input class="campo" type="text" name="nombre" id="nom">
+                    <input class="campo" type="text" name="nombre" id="nom" required>
                     <br>
                     <label class="etiqueta" for="ape">Apellido</label>
-                    <input class="campo" type="text" name="apellido" id="ape">
+                    <input class="campo" type="text" name="apellido" id="ape" required>
                     <br>
                     <label class="etiqueta" for="mail">Correo</label>
-                    <input class="campo" type="email" name="Correo" id="mail">
+                    <input class="campo" type="email" name="Correo" id="mail" required>
                     <br>
                     <label class="etiqueta" for="cant">Cantidad de comensales</label>
-                    <input class="campo" type="number" name="Comensales" id="cant" min="1" max="12">
+                    <input class="campo" type="number" name="comensales" id="cant" required>
                     <br>
                     <label class="etiqueta" for="fecha">Fecha</label>
-                    <input class="campo" type="date" name="fecha" id="fecha">
+                    <input class="campo" type="date" name="fecha" id="fecha" required>
                     <br>
                     <label class="etiqueta" for="hoario">Horario</label><br>
                     <table>
                         <tr>
-                            <td>
-                    <input type="radio" name="horario" id="radio1" value="12">
-                    <label for="radio1">12:00 hs.</label> <br>
-                    <input type="radio" name="horario" id="radio2" value="13">
-                    <label for="radio2">13:00 hs.</label> <br>
-                    <input type="radio" name="horario" id="radio3" value="14">
-                    <label for="radio3">14:00 hs.</label> <br>
-                            </td>
-                            <td>
-                    
+                            <td>                   
                     <input type="radio" name="horario" id="radio4" value="20">
-                    <label for="radio4">20:00 hs.</label> <br>
+                    <label for="radio4">20:00 hs.</label> 
                     <input type="radio" name="horario" id="radio5" value="21">
-                    <label for="radio5">21:00 hs.</label> <br>
+                    <label for="radio5">21:00 hs.</label> 
                     <input type="radio" name="horario" id="radio6" value="22">
-                    <label for="radio6">22:00 hs.</label> <br>
+                    <label for="radio6">22:00 hs.</label> 
                             </td>
                         </tr>
                     </table>
                     <br>
-                    <input class="boton" type="submit" value="Reservar">
+                    <input class="boton" type="submit" value="Reservar" onclick="validaform()">
                 </form>
                 </div>                
             </td>
@@ -75,7 +66,10 @@
        
     </main>
     <footer id="contenedor-footer"></footer>
+
+
 </body>
+<script src="../javaScripts/validaform.js"></script>
 <script src="../javaScripts/DOM.js"></script>
 <script src="../javaScripts/Fetch.js"></script>
 </html>
