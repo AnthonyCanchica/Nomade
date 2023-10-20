@@ -13,6 +13,13 @@ function validaform() {
         return false;
     }
 
+    let correo = document.getElementById("mail").value;
+    if (!/^[\w-]+(\.[\w-]+)*@[\w-]+(\.[\w-]+)+$/.test(correo)) {
+        alert("Ingrese un correo válido en el formato xxx@yyy.com.");
+        document.formulario.mail.focus();
+        return false;
+    }
+
     let comensales = document.getElementById("cant").value;
 	
     if(comensales <1 || comensales>12){
@@ -29,6 +36,23 @@ function validaform() {
         document.formulario.fecha.focus();
         return false;
     }
+
+    let horarios = document.getElementsByName("horario");
+    let horarioSeleccionado = false;
+
+    for (let i = 0; i < horarios.length; i++) {
+        if (horarios[i].checked) {
+            horarioSeleccionado = true;
+            break;
+        }
+    }
+
+    if (!horarioSeleccionado) {
+        alert("Debe seleccionar un horario.");
+        return false;
+    }
+
+
     else {
         alert("Muchas gracias por elegirnos. Su reverva ha sido registrada");
         document.formulario.submit();
