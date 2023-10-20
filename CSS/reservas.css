@@ -119,6 +119,9 @@ label {
 }
 
 #mapa{   
-    width: 30em; /* Ajusta el ancho del mapa al 100% */
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 30em; 
     height: 30em;  
 }
