@@ -75,7 +75,8 @@ body {
     background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;  
+    -webkit-text-stroke: 3px rgb(29, 28, 28);
+    color: transparent; 
     font-size: 9rem;
 }
 
@@ -85,6 +86,7 @@ body {
     background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-stroke: 3px rgb(29, 28, 28);
     color: transparent;  
     font-size: 8rem;
     
