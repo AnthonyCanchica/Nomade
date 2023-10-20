@@ -12,12 +12,10 @@
     <header id="contenedor-header"></header>
     <div id="contenedor-nav"></div>
     <main>
-    <div class="tabla-reservas"> 
-        <table>
-            <tr>                
-               <td> 
-                <div id="formulario"
-                width="90%" height="80%" >
+        <br><br>
+    <div class= "contenedor"> 
+         
+                <div class= "elemento1" id="formulario">
                 <form name = "formulario" onsubmit="return validaform()" action="">
                     <h4>Reservas</h4>
                     <p> - Horario de Apertura - <br> - Mirecoles a Sabado - <br> - 19 hs. - </p>
@@ -51,17 +49,17 @@
                     </table>
                     <br>
                     <input class="boton" type="submit" value="Reservar" onclick="validaform()">
+                    <br><br>
                 </form>
-                </div>                
-            </td>
+                </div>         
 
-            <td >        
+                <div class="contenedor2">
                 <iframe id="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.263507090625!2d-58.428881825005966!3d-34.57219845583303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb585ebbf48ed%3A0x73350aa5aaadc57f!2sNomade%20-%20F%26D!5e0!3m2!1ses!2sar!4v1694689456606!5m2!1ses!2sar"
                 width="95%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </tr>
-        </table>
+                </div>
+
     </div>
        
     </main>
@@ -71,4 +69,5 @@
 </body>
 <script src="../javaScripts/validaform.js"></script>
 <script src="../javaScripts/DOM.js"></script>
+<script src="../javaScripts/Fetch.js"></script>
 </html>
