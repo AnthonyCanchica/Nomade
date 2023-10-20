@@ -2,6 +2,14 @@
 
 /** Listado de eventos **/
 
+h2{
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+}
+
 .contenido-principal {
     padding-top: 5rem;
 }
@@ -74,18 +82,16 @@
     padding: 2rem;
 }
 .texto-evento h3 {
+    color: white;
     font-size: 2.8rem;
     margin: 0;
 }
+
 .texto-evento p {
     margin: 0 0 .5rem 0;
     font-size: 1.8rem;
     text-align: justify;
 }
-.texto-evento .precio {
-    font-size: 2.8rem;
-    font-weight: 900;
-} 
 
 .evento:last-of-type {
     margin-bottom: 0;
@@ -109,6 +115,20 @@
 
 .evento:hover {
     box-shadow: 0 0 20px rgba(255, 165, 0, 0.9); 
+}
+
+.evento:hover h3{
+    color: #d2691e;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: #020202 2px 2px 2px;
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.evento:hover p{
+    color: #000;
+    text-align: justify;
 }
 
 @media (max-width: 500px) {

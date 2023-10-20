@@ -1,1 +1,102 @@
 @import url(../Css/global.css);
+
+h2{
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+}
+
+.contenido-nosotros p{
+    color: #ffffff; /* Color de texto normal */
+    font-size: 2rem;
+    text-align: left;
+}
+
+
+.contenido-nosotros {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-in;
+    display: flex;
+    flex-direction: column;
+    max-width: 70%; 
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contenido-nosotros article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: justify;
+    padding: 2rem;
+}
+
+.video-nosotros{
+    padding: 1rem;
+    width: 98%;
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.video-nosotros audio{
+    width: 80%;
+    border-radius: 5%;
+}
+
+
+.contenido-nosotros:hover {
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    background-color: #e47c05;
+    text-shadow: #454646 2px 2px 2px;
+    border-radius: 5%;
+}
+
+.contenido-nosotros:hover p{
+    color: #000000;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.contenido-nosotros h3{
+    color: #d2691e;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: #020202 2px 2px 2px;
+    text-align:center;
+    font-size: 3rem;
+}
+
+.contenido-nosotros:hover h3{
+    color: #d2691e;
+    -webkit-text-stroke: 1px #000;
+    text-shadow: #020202 2px 2px 2px;
+    text-align:center;
+    font-size: 3rem;
+}
+
+@media (max-width: 500px) { 
+    .informacion-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 0;
+    }
+    .video-nosotros{
+        width: 70%;
+        margin: 0 auto;
+        }
+    .contenido-nosotros {
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
+        column-gap: 4rem;
+        max-width: 50rem; 
+        margin: 0 auto;
+        padding: 1rem;
+        }
+}

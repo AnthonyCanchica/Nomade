@@ -41,7 +41,7 @@ html {
 /** Utilidades */
 .text-center {
     text-align: center;
-}
+        }
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -70,34 +70,34 @@ body {
         
 }
 #contenedor-header h1{
-    text-align: center; 
-    color: #424040e8;  
-    font-size: 9rem;
-    text-shadow: #d2691e 2px 2px 2px;
-
-}
-#contenedor-header h1:hover{
     transition-duration: 1s;
-    transition-timing-function: ease-in-out;
-    color: #d2691e;
-    text-shadow: #424040e8 8px 8px 3px;
+    text-align: center; 
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;  
+    font-size: 9rem;
 }
 
 #contenedor-header h2{
     transition-duration: 1s;
     text-align: center; 
-    color: #d2691e #615f5fd5;  
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;  
     font-size: 8rem;
-    text-shadow: #615f5fd5 4px 4px 2px;
+    
 
 }
-#contenedor-header h2:hover{
+
+#contenedor-header:hover h1,
+#contenedor-header:hover h2 {
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
     text-align: center; 
     color: #d2691e;
     text-shadow: #424040e8 8px 8px 8px;
-    
 }
 
 
@@ -133,6 +133,7 @@ body {
     height: 1.4rem;
     border-top: 2px solid #666666;
     border-bottom: 2px solid #666666;
+    position: relative;
 }
 
 #contenedor-nav a {
@@ -196,6 +197,22 @@ body {
     margin-bottom: 0rem;
 }
 
+#horarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 5rem;
+} 
+
+#horarios h2{
+    background-image: linear-gradient(to right, yellow, darkorange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+  }
+
 #horarios a{
     display: block;
     text-align: center;
@@ -215,7 +232,7 @@ body {
     font-weight: bold;
     color: #f30000;
     text-shadow: #020202 2px 2px 2px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #horarios h3 {
@@ -245,7 +262,7 @@ body {
 
 
 .logoutm {
-    height: 4rem;
+    height: 5rem;
     margin-bottom: 10px;
 }
 
@@ -262,8 +279,10 @@ body {
     transition-timing-function: ease-in-out;
     flex-grow: 0.01;
     font-weight: bold;
-    color: #f30000;
-    text-shadow: #020202 2px 2px 2px;
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-size: 2rem;
 }
 
@@ -285,8 +304,10 @@ body {
     transition-timing-function: ease-in-out;
     flex-grow: 0.01;
     font-weight: bold;
-    color: #f30000;
-    text-shadow: #020202 2px 2px 2px;
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     border-radius: 10%;
     font-size: 2rem;
 }

@@ -1,81 +1,156 @@
-[
-  {
-    "foot": "Grilled Chicken",
-    "type": "Chicken",
-    "price": 10.99,
-    "id": 1,
-    "event": false,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "foot": "Grilled Salmon",
-    "type": "Fish",
-    "price": 14.99,
-    "id": 2,
-    "event": true
-  },
-  {
-    "food": "Grilled Vegetables",
-    "type": "Vegetarian",
-    "price": 8.99,
-    "id": 3,
-    "event": false,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Steak",
-    "type": "Beef",
-    "price": 16.99,
-    "id": 4,
-    "event": true,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Shrimp",
-    "type": "Seafood",
-    "price": 12.99,
-    "id": 5,
-    "event": false,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Pork Chops",
-    "type": "Pork",
-    "price": 13.99,
-    "id": 6,
-    "event": false,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Corn on the Cob",
-    "type": "Vegetarian",
-    "price": 4.99,
-    "id": 7,
-    "event": false,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Pineapple",
-    "type": "Fruit",
-    "price": 3.99,
-    "id": 8,
-    "event": true,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Portobello Mushroom",
-    "type": "Vegetarian",
-    "price": 7.99,
-    "id": 9,
-    "event": false,
-    "image": "../imagenes/food/Avocado.jpg"
-  },
-  {
-    "food": "Grilled Ribs",
-    "type": "Pork",
-    "price": 15.99,
-    "id": 10,
-    "event": true,
-    "image": "../imagenes/food/Avocado.jpg"
-  }
+{
+  "food":[
+    {
+      "name": "Pizza",
+      "type": "Italian",
+      "price": "12.99",
+      "event": "true",
+      "id": "1",
+      "image": "../imagenesDos/food/Avocado.jpeg"
+    },
+    {
+      "name": "Burger",
+      "type": "American",
+      "price": "8.99",
+      "event": "true",
+      "id": "2",
+      "image": "../imagenesDos/food/Bondiola.jpeg"
+    },
+    {
+      "name": "Sushi",
+      "type": "Japanese",
+      "price": "15.99",
+      "event": "true",
+      "id": "3",
+      "image": "../imagenesDos/food/Burger.jpeg"
+    },
+    {
+      "name": "Pasta",
+      "type": "Italian",
+      "price": "10.99",
+      "event": "false",
+      "id": "4",
+      "image": "../imagenesDos/food/Calabresa.jpeg"
+    },
+    {
+      "name": "Steak",
+      "type": "American",
+      "price": "19.99",
+      "event": "true",
+      "id": "5",
+      "image": "../imagenesDos/food/Falafel.jpeg"
+    },
+    {
+      "name": "Ramen",
+      "type": "Japanese",
+      "price": "9.99",
+      "event": "true",
+      "id": "6",
+      "image": "../imagenesDos/food/FlanDDL.jpeg"
+    },
+    {
+      "name": "Salad",
+      "type": "Healthy",
+      "price": "7.99",
+      "event": "false",
+      "id": "7",
+      "image": "../imagenesDos/food/Harumakis.jpeg"
+    },
+    {
+      "name": "Tacos",
+      "type": "Mexican",
+      "price": "11.99",
+      "event": "true",
+      "id": "8",
+      "image": "../imagenesDos/food/Mango.jpeg"
+    },
+    {
+      "name": "Curry",
+      "type": "Indian",
+      "price": "13.99",
+      "event": "true",
+      "id": "9",
+      "image": "../imagenesDos/food/Milanesa.jpeg"
+    },
+    {
+      "name": "Fish and Chips",
+      "type": "British",
+      "price": "14.99",
+      "event": "true",
+      "id": "10",
+      "image": "../imagenesDos/food/Papardelle.jpeg"
+    },
+    {
+      "name": "Gyros",
+      "type": "Greek",
+      "price": "8.99",
+      "event": "false",
+      "id": "11",
+      "image": "../imagenesDos/food/Ribs.jpeg"
+    },
+    {
+      "name": "Sushi Burrito",
+      "type": "Fusion",
+      "price": "12.99",
+      "event": "true",
+      "id": "12",
+      "image": "../imagenesDos/food/RuculaJamon.jpeg"
+    },
+    {
+      "name": "Pho",
+      "type": "Vietnamese",
+      "price": "10.99",
+      "event": "false",
+      "id": "13",
+      "image": "../imagenesDos/food/Salmon.jpeg"
+    },
+    {
+      "name": "Chicken Tikka Masala",
+      "type": "Indian",
+      "price": "15.99",
+      "event": "false",
+      "id": "14",
+      "image": "../imagenesDos/food/Sorrentinos.jpeg"
+    },
+    {
+      "name": "Lasagna",
+      "type": "Italian",
+      "price": "13.99",
+      "event": "true",
+      "id": "15",
+      "image": "../imagenesDos/food/Sorrentinos.jpeg"
+    },
+    {
+      "name": "Hamburger",
+      "type": "American",
+      "price": "9.99",
+      "event": "true",
+      "id": "16",
+      "image": "../imagenesDos/food/Sousvide.jpeg"
+    },
+    {
+      "name": "Pad Thai",
+      "type": "Thai",
+      "price": "11.99",
+      "event": "false",
+      "id": "17",
+      "image": "../imagenesDos/food/Tofu.jpeg"
+    },
+    {
+      "name": "Tandoori Chicken",
+      "type": "Indian",
+      "price": "16.99",
+      "event": "true",
+      "id": "18",
+      "image": "../imagenesDos/food/VolcanCh.jpeg"
+    },
+    {
+      "name": "Caesar Salad",
+      "type": "Healthy",
+      "price": "8.99",
+      "event": "false",
+      "id": "19",
+      "image": "../imagenesDos/food/Volcanz.jpeg"
+    }
 ]
+}

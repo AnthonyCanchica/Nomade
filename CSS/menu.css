@@ -1,1 +1,149 @@
 @import url(../Css/global.css);
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+#imgDrink{
+    width: 20rem;
+    height: 100%;
+}
+
+#imgFood{
+    width: 20rem;
+    height: 100%;
+}
+
+h1{
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 5rem;
+}
+
+h2{
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+}
+.container-botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    margin: 0;
+}
+
+
+#view-button {
+        padding: 15px 30px;
+        background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+        color: #d2691e;
+        border: none;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color:black;
+        font-weight: bold;
+        margin-bottom: 2rem;
+}
+
+#clear-button {
+    padding: 15px 30px;
+    background-color: #d2691e;
+    border: none;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        color:white;
+        font-weight: bold;
+        margin-bottom: 2rem;
+}
+
+button:hover, button:focus {
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.9); 
+}
+
+#view-buttonDos {
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    color: #d2691e;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color:black;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#clear-buttonDos {
+padding: 15px 30px;
+background-color: #d2691e;
+border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color:white;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.container-api {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+table {
+	border-spacing: 0;
+	width: 90%;
+	border-radius: 4px;
+  margin: 2rem 0 5rem 0;
+  background-color: black;
+  color: rgb(255, 128, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+.hide {
+display: none;
+}
+
+.show {
+display: initial;
+}
+
+@media (max-width: 500px) { 
+    table {
+        width: 90%; 
+    }
+
+    table tr td {
+        width: 50%; 
+        display: block; 
+        text-align: center; 
+        margin: 0 auto;
+    }
+
+    table tr {
+        margin-bottom: 10px; 
+    }
+
+    .container-api {
+        display: block; 
+        text-align: center; 
+    }
+}
+
+

@@ -11,215 +11,34 @@
 <body>
     <header id="contenedor-header"></header>
     <div id="contenedor-nav"></div>
-        <main>
-            <h1>FOOD</h1>
+    <main>
+        <h1>Menu</h1> 
+        <h2>Lista API-Bebidas</h2>
+        <div class="container-botones">
+            <button id="view-button" class="" onclick="retrieveDrinks();">Ver Tragos</button>
+            <button id="clear-button" class="hide" onclick="clearTable();">Ocultar Lista</button>
+        </div>        
+        <div class="container-api">
             <table>
-                <h2>Entradas</H2>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Empanadas.jpeg" alt="Empanadas" width="150">
-                        </figure>
-                    </td>
-                </tr>
+            <tbody id="tableDrinkBody">
+            </tbody>
             </table>
+        </div>
+        <h2>Lista Local-Json-Platillos</h2>
+        <div class="container-botones">
+            <button id="view-buttonDos" class="" onclick="retrieveFood();">Ver Platillos</button>
+            <button id="clear-buttonDos" class="hide" onclick="clearTableDos();">Ocultar Lista</button>
+        </div>
+        <div class="container-api">
             <table>
-                <h2>Tapeos</h2>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Harumakis.jpeg" alt="Harumakis" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Falafel.jpeg" alt="Falafel" width="150">
-                        </figure>
-                    </td>
-                </tr>
+            <tbody id="tableFoodBody">
+            </tbody>
             </table>
-            <table>
-                <h2>Platos Principales</h2>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Burger.jpeg" alt="Burguer" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Bondiola.jpeg" alt="Bondiola" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Milanesa.jpeg" alt="Milanesa" width="150">
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Salmon.jpeg" alt="Salmon" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Sorrentinos.jpeg" alt="Sorrentinos" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Sous Vide Meat.jpeg" alt="Sous Vide Meat" width="150">
-                        </figure>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <h2>Pizzas</h2>
-                <tr>
-                    <td>
-                        <img src="../imagenes/Calabresa.jpeg" alt="Calabresa" width="150">
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <h2>Postres</h2>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Flan DDL.jpeg" alt="Flan DDL" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/volcan DDL.jpeg" alt="Volcan DDL" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/volcan Ch.jpeg" alt="Volcan Ch" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/mango.jpeg" alt="mango" width="150">
-                        </figure>
-                    </td>
-                </tr>
-            </table>
-            <h1>DRINKS</h1>
-            <h2> Bebidas con Alcohol</h2>
-            <table>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Aperol.jpeg" alt="Aperol" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Branca.jpeg" alt="Branca" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Caipi Lima.jpeg" alt="Caipi Lima" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Cucumber Cooktail.jpeg" alt="Cumumber cooktail" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <img src="../imagenes/Tom Collins.jpeg" alt="Tom Collins" width="150">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Cucumber fresh.jpeg" alt="Cucumber Fresh" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Cynar Julep.jpeg" alt="Cynar Julep" width="150">
-                        </figure>
-                    </td>
-
-
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Daiquiri Durazno.jpeg" alt="Daiquiri Durazno" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Daiquiri Frutilla.jpeg" alt="Daiquiri Frutilla" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Daiquiri Maracuya.jpeg" alt="Daiquiri Maracuya" width="150">
-                        </figure>
-                    </td>
-                </TR>
-                <TR>
-                    <td>
-                        <figure>
-                            <img src="../imagenes/Gin Clasic.jpeg" alt="Gin Clasic" width="150">
-                        </figure>
-                    </td>
-                    <td>
-                        <img src="../imagenes/Gin Frutilla.jpeg" alt="Gin Frutilla" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Gin Maracuya.jpeg" alt="Gin Maracuya" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Jamenson Lemon.jpeg" alt="Jamenson Lemon" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Mojito Lima.jpeg" alt="Mojito Lima" width="150">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="../imagenes/Mojito Maracuya.jpeg" alt="Mojito Maracuya" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Negroni.jpeg" alt="Negroni" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Old Fashioned.jpeg" alt="Old Fashioned" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Penicillin Cocktail.jpeg" alt="Penicillin Cocktail" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Punt E Mes.jpeg" alt="Punt E Mes" width="150">
-                    </td>
-                </tr>
-            </table>
-            
-            <table>
-                <h2> Bebidas sin Alcohol</h2>
-                <tr>
-                    <td>
-                        <img src="../imagenes/Tinto Nomade.jpeg" alt="Tinto Nomade" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Limonada Menta.jpeg" alt="Limonada Menta" width="150">
-                    </td>
-                    <td>
-                        <img src="../imagenes/Limonada Nomade.jpeg" alt="Limonada Nomade" width="150">
-                    </td>
-                </tr>
-            </table>
-        </main>
-        <footer id="contenedor-footer"></footer>
+        </div>
+    </main>
+    <footer id="contenedor-footer"></footer>
 </body>
 <script src="../javaScripts/DOM.js"></script>
-<script src="../javaScripts/Fetch.js"></script>
+<script src="../javaScripts/prueba.js"></script>
+<script src="../javaScripts/pruebaDos.js"></script>
 </html>

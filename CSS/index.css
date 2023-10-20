@@ -56,6 +56,14 @@
     text-align: left;
 }
 
+h2{
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+}
+
 .contenido-nosotros:hover h3{
     color: #d2691e;
     -webkit-text-stroke: 1px #000;
@@ -71,25 +79,19 @@
         align-items: center; 
         padding: 0;
     }
-}
-
-@media (max-width: 500px) { 
     .video-nosotros{
-    width: 70%;
-    margin: 0 auto;
-    }
-}
-
-@media (max-width: 500px) { 
+        width: 70%;
+        margin: 0 auto;
+        }
     .contenido-nosotros {
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
-    column-gap: 4rem;
-    max-width: 50rem; 
-    margin: 0 auto;
-    padding: 1rem;
-    }
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-columns: repeat(auto-fit, minmax( 25rem, 1fr ) );
+        column-gap: 4rem;
+        max-width: 50rem; 
+        margin: 0 auto;
+        padding: 1rem;
+        }
 }
