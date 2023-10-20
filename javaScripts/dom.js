@@ -21,16 +21,12 @@ footerContainer.innerHTML = `
 		<img src="../imagenesDos/logos/informacion.png" class="logoutm" >
 		<h3>TELÉFONO</h3>
 		<p><b>(+549) 1156074972<b></p>
-		<br>
-		<br>
 	</div>
 	<!-- Emails -->
 	<div id="email">
 		<img src="../imagenesDos/logos/correo-electronico.png" class="logoutm" >
 		<h3>Email</h3>
 		<p><b><a href="mailto:info@parrillaNomade.com.ar" target="_blank">info@parrillaNomade.com.ar</a><b></p>
-		<br>
-		<br>
 	</div>
 </div>
 	<!-- Social icons -->
@@ -42,6 +38,14 @@ footerContainer.innerHTML = `
 	<!-- Instagram-->
 	<a href="https://www.instagram.com/parrillaNomade/" target="_blank">
 		<i class="fa fa-instagram"></i>
+	</a>
+	<!-- Twitter-->
+	<a href="https://www.x.com/parrillaNomade/" target="_blank">
+		<i class="fa fa-twitter"></i>
+	</a>
+	<!-- LinkedIn-->
+	<a href="https://www.linkedin.com/parrillaNomade/" target="_blank">
+		<i class="fa fa-linkedin"></i>
 	</a>
 </div>
 `; 

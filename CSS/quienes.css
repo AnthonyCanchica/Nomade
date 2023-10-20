@@ -85,8 +85,9 @@ h2{
         padding: 0;
     }
     .video-nosotros{
-        width: 70%;
+        width: 95%;
         margin: 0 auto;
+        padding-bottom: 0;
         }
     .contenido-nosotros {
         transition-duration: 0.4s;

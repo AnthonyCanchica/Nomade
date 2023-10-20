@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOMADE - Quienes Somos</title>
     <link rel="shortcut icon" type="image/x-icon" href="../imagenes/Icono.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header id="contenedor-header"></header>
@@ -14,9 +15,9 @@
     <h2 class="text-center">Sea invitado</h2>
         <div class="contenido-nosotros">
             <div class="video-nosotros">
-                <video class="video-nosotros" src="../videos/video1.mp4"  frameborder="0" scrolling="no" controls allowfullscreen autoplay loop  width="80%" ></video>
+                <video class="video-nosotros" src="../videos/video1.mp4"  frameborder="0" scrolling="no" loop  width="80%" ></video>
                 <br>
-                <audio src="../videos/istagram.mp4"  frameborder="0" scrolling="no" controls allowfullscreen autoplay muted loop ></audio>
+                <audio src="../videos/istagram.mp4"  frameborder="0" scrolling="no" allowfullscreen  loop ></audio>
             </div>
             <article>
                 <h3>Conozcanos</h3>
@@ -31,4 +32,21 @@
     <footer id="contenedor-footer"></footer>
 </body>
 <script src="../javaScripts/DOM.js"></script>
+<script>document.addEventListener('DOMContentLoaded', function () {
+    const contenidoNosotros = document.querySelector('.contenido-nosotros');
+    const videoElement = document.querySelector('.video-nosotros video');
+    const audioElement = document.querySelector('.video-nosotros audio');
+
+    contenidoNosotros.addEventListener('mouseenter', function () {
+        // Reproducir el video y la música cuando el mouse entra
+        videoElement.play();
+        audioElement.play();
+    });
+
+    contenidoNosotros.addEventListener('mouseleave', function () {
+        // Pausar el video y la música cuando el mouse sale
+        videoElement.pause();
+        audioElement.pause();
+    });
+});</script>
 </html>

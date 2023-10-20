@@ -124,7 +124,7 @@ body {
     
 }
 .nav-principal {
-    background-color: #e47c05;
+    background-image: linear-gradient(to top, yellow, rgb(255, 68, 0));
     padding: 2rem;
     display: flex;
     flex-direction: row;
@@ -194,7 +194,6 @@ body {
     color: #fff;
     padding: 2rem;
     margin-top: 3rem;
-    margin-bottom: 0rem;
 }
 
 #horarios{
@@ -256,8 +255,9 @@ body {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    padding: 5rem;
-    margin-bottom: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 5px;
 }
 
 
@@ -315,13 +315,20 @@ body {
 /* Estilos para los íconos de redes sociales */
 .social {
     display: flex;
+    margin-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .social a {
     margin-right: 10px;
-    color: #fff;
+    background-image: linear-gradient(to right, yellow, rgb(255, 68, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 3rem;
+    margin: 0 10px; 
 }
 
 @media (max-width: 500px) { 
